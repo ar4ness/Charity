@@ -1,5 +1,16 @@
 .shop-block {
-  height: 480px;
+  height: 482px;
   background: #f3f3f3;
-  padding: 140px 0 120px;
+  .shop-holder {padding: 140px 0 120px;
+  p {
+    margin-bottom: 35px;
+  }}
+  img {
+    //height: 100%;
+    //bottom: 0;
+   // transform: translateX(50%);
+  }
 }
+
+
+

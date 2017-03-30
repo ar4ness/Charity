@@ -2,9 +2,46 @@
   background: #000;
   padding: 0 0 55px;
  /* margin-bottom: 80px;*/
- /* position: relative;*/
-}
-header {
+  position: relative;
+  .header-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    .header-slade-wrapper {
+      min-height: 762px;
+      height: 100%;
+      &.slide-1 {
+        background: url("../img/city-sunny-people-street.jpg") no-repeat 50%/cover;
+      }
+      &.slide-2 {
+        background: url("../img/header-picture-2.jpg") no-repeat 50%/cover;
+      }
+      &.slide-3 {
+        background: url("../img/header-picture-3.jpg") no-repeat 50%/cover;
+      }
+    }
+   /* .slick-dots {
+      margin: 0 auto;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+
+      transform: translateX(-50%);*/
+      li {
+        width: 68px;
+        background: rgba(130, 126, 135, 0.4);
+        border-radius: 50%;
+        height: 7px;
+        margin: 15px 15px 15px 0;
+      }
+      .slick-active {
+        background: rgba(117, 61, 157, 0.4);
+      }
+    }
+  }
+
+.header {
   height: 100px;
   padding-top: 45px;
   padding-bottom: 45px;
@@ -12,6 +49,9 @@ header {
   ul {
     padding-top: 10px;
     padding-bottom: 10px;
+    h4 {
+      color: #fff;
+    }
     li {
       display: inline-block;
       margin-right: 30px;
@@ -36,8 +76,25 @@ header {
 
 .article-title {
   margin: 140px 0 120px;
+  h1 {
+    margin-bottom: 25px;
+  }
   p {
     font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(#fff, 0.6) ;
+    margin-bottom: 75px;
+  }
+}
+.article-list {
+  h3 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  p {
+    color: rgba(#fff, 0.6);
   }
 }
 .header-wrapper {
