@@ -14,12 +14,12 @@
       &.slide-1 {
         background: url("../img/city-sunny-people-street.jpg") no-repeat 50%/cover;
       }
-      &.slide-2 {
-        background: url("../img/header-picture-2.jpg") no-repeat 50%/cover;
+      /*&.slide-2 {
+        background: url("../img/city-sunny-people-street.jpg") no-repeat 50%/cover;
       }
       &.slide-3 {
-        background: url("../img/header-picture-3.jpg") no-repeat 50%/cover;
-      }
+        background: url("../img/city-sunny-people-street.jpg") no-repeat 50%/cover;
+      }*/
     }
    /* .slick-dots {
       margin: 0 auto;
@@ -28,7 +28,7 @@
       left: 50%;
 
       transform: translateX(-50%);*/
-      li {
+      /*li {
         width: 68px;
         background: rgba(130, 126, 135, 0.4);
         border-radius: 50%;
@@ -37,9 +37,9 @@
       }
       .slick-active {
         background: rgba(117, 61, 157, 0.4);
-      }
-    }
+      }*/
   }
+}
 
 .header {
   height: 100px;
@@ -124,5 +124,18 @@ a {
     width: 5px;
     background: #753d9d;
     border-radius: 5px;
+  }
+}
+.header-slider {
+  .slick-list {
+    margin: 0 -15px;
+  }
+  .slick-arrow {
+    color: transparent;
+    font-size: 0;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 0;
   }
 }
