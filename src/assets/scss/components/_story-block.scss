@@ -1,8 +1,9 @@
 .story-block {
   height: 480px;
-  background: url("../img/story.jpg") no-repeat;
+  background: url("../img/story.jpg") no-repeat 50%/cover;
   padding: 160px 0 190px;
   h2, p {
     color: #fff;
+    line-height: 22px;
   }
 }
