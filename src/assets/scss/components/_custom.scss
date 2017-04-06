@@ -29,29 +29,30 @@
   }
 }
 
-/*.bordered-btn {
-  width: 200px;
-  height: 50px;
-  border: 2px solid #150c31;
-  border-radius: 25px;
-  transition: all ease-in-out 0.3s;
-  .btn-white {
-    border-color: #150c31;
-    &:hover {
-      background-color: #150c31;
-      //border-color: #150c31;
-      color: #fff;
-    }
-  }
-  .btn-green {
-    border-color: #32be60;
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 400 15px/18px 'Montserrat', sans-serif;
+  transition: all ease-in-out 0.2s;
+  color: #150c31;
+  &:hover, &:active {
     color: #32be60;
-    &:hover {
-      background-color: #32be60;
-      //border-color: #150c31;
-      color: #fff;
+    .bordered {
+      position: relative;
+      //padding-left: 19px;
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        background: #fff;
+        border-radius: 5px;
+      }
     }
   }
 }
-*/
 

@@ -8,12 +8,11 @@ html, body {
 body {
   margin: 0;
 }
-
 ul {
   font-size: 0;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+ list-style-type: none;
 }
 li {
   margin: 0;
@@ -25,51 +24,23 @@ p {
   font: 300 14px/20px 'Montserrat', sans-serif;
   margin: 0;
 }
-
 span {
   display: inline-block;
 }
-
 h1 {
   color: #ffffff;
   font: 400 60px 'Montserrat', sans-serif;
   margin: 0;
   letter-spacing: 1px;
 }
-
-h2 {
+h2, h3, h4 {
   color: #150c31;
+}
+h2 {
   font: 400 28px 'Montserrat', sans-serif;
   margin: 0 0 20px;
 }
 h3 {
-  color: #150c31;
   font: 400 18px 'Montserrat', sans-serif;
   margin: 0;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font: 400 15px/18px 'Montserrat', sans-serif;
-  transition: all ease-in-out 0.2s;
-  color: #150c31;
-  &:hover, &:active {
-    color: #753d9d;
-  }
-}
-.bordered {
-  position: relative;
-  padding-left: 19px;
-  &:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 5px;
-    background: #753d9d;
-    border-radius: 5px;
-  }
 }

@@ -5,8 +5,16 @@ footer {
   .year {
     margin-right: 5px;
   }
-  ul {
-    list-style: circle;
+  li {
+    margin-right: 5px;
+    &:nth-child(n+2) {
+      :before {
+        color: #fff; /* Цвет маркера */
+        content: "•"; /* Сам маркер */
+        padding-right: 5px; /* Расстояние от маркера до текста */
+      }
+    }
+
     a {
       color: #fff;
       font-size: 12px;
