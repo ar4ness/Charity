@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1170);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -56,6 +56,17 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+$main-grey: #807996;
+$dots-color: #b8b6c1;
+$main-dark: #150c31;
+$main-red: #cf1b41;
+$main-green: #32be60;
+$main-white: #ffffff;
+$dark-background: #000;
+$light-background: #f3f3f3;
+
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -63,7 +74,8 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Montserrat', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -83,11 +95,11 @@ $breakpoints: (
   small: 0,
   medium: 640px,
   large: 1024px,
-  xlarge: 1200px,
+  xlarge: 1170px,
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge);
 
 // 3. The Grid
 // -----------

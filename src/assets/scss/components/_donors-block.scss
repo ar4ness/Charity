@@ -1,8 +1,13 @@
 .donors-block {
   padding: 120px 0 115px;
-
+  @include breakpoint(768px down) {
+    padding: 20px 0 15px;
+  }
   .dots {
     margin-bottom: 75px;
+    @include breakpoint(768px down)  {
+      margin-bottom: 15px;
+    }
   }
   img {
     display: inline-block;

@@ -1,7 +1,15 @@
 footer {
   padding: 35px 0 30px;
   background: #202020;
-  height: 80px;
+  //height: 80px;
+  height: 100%;
+  @include breakpoint (640px down) {
+    padding: 20px 0 20px;
+
+  }
+  //@include breakpoint (500px down) {
+   // height: 55px;
+  //}
   .year {
     margin-right: 5px;
   }
@@ -9,14 +17,14 @@ footer {
     margin-right: 5px;
     &:nth-child(n+2) {
       :before {
-        color: #fff; /* Цвет маркера */
+        color: $main-white; /* Цвет маркера */
         content: "•"; /* Сам маркер */
         padding-right: 5px; /* Расстояние от маркера до текста */
       }
     }
 
     a {
-      color: #fff;
+      color: $main-white;
       font-size: 12px;
       text-transform: capitalize;
     }

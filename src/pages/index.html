@@ -6,13 +6,19 @@
     <div class="header-slade-wrapper slide-3"></div>
   </div>
   <div class="header-wrapper">
-    <header class="header row align-justify align-middle">
 
-      <div class="small-12 large-2 column logo">
-        <a href="#" class="float-left">CHARITY</a>
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="header row align-justify align-middle" id="example-menu">
+      <div class="column shrink small-order-2 medium-order-1">
+        <div class=" logo">
+          <a href="#" class="float-left">CHARITY</a>
+        </div>
       </div>
-
-      <nav class="small-12 large-6 column navigation">
+      <div class="column shrink small-order-1 medium-order-2">
         <ul class="no-bullet">
           <li class="active"><a href="#"  class="active">HOME</a></li>
           <li><a href="#">DISCOVER</a></li>
@@ -21,10 +27,11 @@
           <li><a href="#">SHOP</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+
     <div class="row align-center ">
-      <div class="column small-12 large-8 text-center article-title">
+      <div class="column small-12 large-10 text-center article-title">
         <h1 >Helping People</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -34,18 +41,18 @@
         </div>
       </div>
     </div>
-    <div class="row medium-unstack align-justify article-list">
-      <div class="column">
+    <div class="row medium-unstack align-justify">
+      <div class="column  article-list">
         <h3>Save Lives</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
       </div>
-      <div class="column">
+      <div class="column  article-list">
         <h3>Give an Education</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
       </div>
-      <div class="column">
+      <div class="column  article-list">
         <h3>Care about Health</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
@@ -61,13 +68,15 @@
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         Ut wisi enim ad minim veniam.</p>
       <div class="dots">
-
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
   </div>
   <div class="row small-up-1 medium-up-2 large-up-4">
     <div class="column card-wrapper">
-      <span class="img-holder"> <img src="assets/img/India.jpg" alt=""></span>
+      <span class="img-holder text-center"> <img src="assets/img/India.jpg" alt=""></span>
       <div class="camp-card">
         <h4>Urgent rebuilding - 2500 Chennai flood survivors</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -93,8 +102,8 @@
         </div>
       </div>
     </div>
-    <div class="column">
-      <span> <img src="assets/img/sierra-leone.jpg" alt=""></span>
+    <div class="column card-wrapper">
+      <span class="img-holder"> <img src="assets/img/sierra-leone1.jpg" alt=""></span>
       <div class="camp-card">
         <h4>Internet Opens New World of Learning Opportunities</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -120,8 +129,8 @@
         </div>
       </div>
     </div>
-    <div class="column">
-      <span> <img src="assets/img/guatemala.jpg" alt=""></span>
+    <div class="column card-wrapper">
+      <span class="img-holder"> <img src="assets/img/guatemala.jpg" alt=""></span>
       <div class="camp-card">
         <h4>Support 8 youth to succeed in school and society</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -147,8 +156,8 @@
         </div>
       </div>
     </div>
-    <div class="column">
-      <span> <img src="assets/img/Mali.jpg" alt=""></span>
+    <div class="column card-wrapper">
+      <span class="img-holder"> <img src="assets/img/Mali.jpg" alt=""></span>
       <div class="camp-card">
         <h4>Use Soap to Empower 60 Rape Survivors in Mali</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -200,66 +209,69 @@
         laoreet dolore magna aliquam erat volutpat.
         Ut wisi enim ad minim veniam.</p>
       <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
   </div>
-  <div class="row align-justify way-to-help">
-    <div class="column small-12 medium-5">
-      <div class="way-to-help">
-        <div class="row">
-          <div class="small-2 column align-self-middle smart-object-holder">
+  <div class="row align-justify ">
+    <div class="column small-12 medium-6 large-5 way-to-help-holder">
+      <div class="row">
+        <div class="small-3 medium-2 column text-center ">
+          <div class="smart-object-holder">
             <img src="assets/img/Vector-Smart-Object1.png">
           </div>
-          <div class="columns small-10">
-            <h3>Sent a donation</h3>
-            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-              Morbi lacinia molestie dui.
-              Praesent blandit dolor.</p>
-          </div>
+        </div>
+        <div class="columns small-9 medium-10">
+          <h3>Sent a donation</h3>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Morbi lacinia molestie dui.
+            Praesent blandit dolor.</p>
         </div>
       </div>
     </div>
-    <div class="column small-12 medium-5">
-      <div class="way-to-help">
-        <div class="row">
-          <div class="small-2 column">
+    <div class="column small-12 medium-6 large-5 way-to-help-holder">
+      <div class="row">
+        <div class="small-3 medium-2 column text-center ">
+          <div class="smart-object-holder">
             <img src="assets/img/Vector-Smart-Object3.png">
           </div>
-          <div class="small-10 columns">
-            <h3>Buy related goods</h3>
-            <p>At iste non dolendi status non vocatur voluptas. Praeclare enim Plato:
-              Beatum, cui etiam in senectute contigerit, ut sapientiam verasque opiniones assequi possit.</p>
-          </div>
+        </div>
+        <div class="small-9 medium-10 columns">
+          <h3>Buy related goods</h3>
+          <p>At iste non dolendi status non vocatur voluptas. Praeclare enim Plato:
+            Beatum, cui etiam in senectute contigerit, ut sapientiam verasque opiniones assequi possit.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="row align-justify way-to-help">
-    <div class="column small-12 medium-5">
-      <div class="way-to-help">
-        <div class="row">
-          <div class="small-2 column">
+  <div class="row align-justify">
+    <div class="column small-12 medium-6 large-5  way-to-help-holder">
+      <div class="row">
+        <div class="small-3 medium-2 column text-center ">
+          <div class="smart-object-holder">
             <img src="assets/img/Vector-Smart-Object2.png">
           </div>
-          <div class="small-10 columns">
-            <h3>Donate blood</h3>
-            <p>Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius.
-              Indicant pueri, in quibus ut in speculis natura cernitur sum esse utilitatem in historia.</p>
-          </div>
+        </div>
+        <div class="small-9 medium-10 columns">
+          <h3>Donate blood</h3>
+          <p>Mihi vero, inquit, placet agi subtilius et, ut ipse dixisti, pressius.
+            Indicant pueri, in quibus ut in speculis natura cernitur sum esse utilitatem in historia.</p>
         </div>
       </div>
     </div>
-    <div class="column small-12 medium-5">
-      <div class="way-to-help">
-        <div class="row">
-          <div class="small-2 column">
+    <div class="column small-12 medium-6 large-5 way-to-help-holder">
+      <div class="row">
+        <div class="small-3 medium-2 column text-center ">
+          <div class="smart-object-holder">
             <img src="assets/img/Vector-Smart-Object4.png">
           </div>
-          <div class="small-10 columns">
-            <h3>Become a volunteer</h3>
-            <p>Omnia contraria, quos etiam insanos esse vultis. Quid censes in Latino fore?
-              Negabat igitur ullam esse artem, quae ipsa a se proficisceretur.</p>
-          </div>
+        </div>
+        <div class="small-9 medium-10 columns">
+          <h3>Become a volunteer</h3>
+          <p>Omnia contraria, quos etiam insanos esse vultis. Quid censes in Latino fore?
+            Negabat igitur ullam esse artem, quae ipsa a se proficisceretur.</p>
         </div>
       </div>
     </div>
@@ -293,66 +305,46 @@
         laoreet dolore magna aliquam erat volutpat.
         Ut wisi enim ad minim veniam.</p>
       <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
   </div>
-
-
   <div class="row medium-unstack align-spaced">
-    <div class="donors-slider">
-      <div class="slide-wrapper">
-        <div class="columns text-center">
-          <div><img src="assets/img/13m.jpg" alt="peter-thompson-photo"/></div>
-          <h3>$12,840</h3>
-          <p>Peter Thompson</p>
-        </div>
+    <div class="columns text-center">
+      <div><img src="assets/img/13m.jpg" alt="peter-thompson-photo"/></div>
+      <h3>$12,840</h3>
+      <p>Peter Thompson</p>
+    </div>
+    <div class="columns text-center">
+      <div>
+        <span><img src="assets/img/10m.jpg" alt="victor-marquez-photo"/></span>
+        <h3>$10,000</h3>
+        <p>Victor Marquez</p>
       </div>
-      <div class="slide-wrapper">
-        <div class="columns text-center">
-          <div>
-            <span><img src="assets/img/10m.jpg" alt="victor-marquez-photo"/></span>
-            <h3>$10,000</h3>
-            <p>Victor Marquez</p>
-          </div>
-        </div>
+    </div>
+    <div class="columns text-center">
+      <div>
+        <span><img src="assets/img/96m.jpg" alt="ginger-mathews-photo"/></span>
+        <h3>$9,600</h3>
+        <p>Ginger Mathews</p>
       </div>
-      <div class="slide-wrapper">
-        <div class="columns text-center">
-          <div>
-            <span><img src="assets/img/96m.jpg" alt="ginger-mathews-photo"/></span>
-            <h3>$9,600</h3>
-            <p>Ginger Mathews</p>
-          </div>
-        </div>
+    </div>
+    <div class="columns text-center">
+      <div>
+        <span><img src="assets/img/92m.jpg" alt="jim-howards-photo"/></span>
+        <h3>$9,250</h3>
+        <p>Jim Howards</p>
       </div>
-      <div class="slide-wrapper">
-        <div class="columns text-center">
-          <div>
-            <span><img src="assets/img/92m.jpg" alt="jim-howards-photo"/></span>
-            <h3>$9,250</h3>
-            <p>Jim Howards</p>
-          </div>
-        </div>
+    </div>
+    <div class="columns text-center">
+      <div>
+        <span><img src="assets/img/87m.jpg" alt="magdeleine-schmidt-photo"/></span>
+        <h3>$8,710</h3>
+        <p>Magdeleine Schmidt</p>
       </div>
-      <div class="slide-wrapper">
-        <div class="columns text-center">
-          <div>
-            <span><img src="assets/img/87m.jpg" alt="magdeleine-schmidt-photo"/></span>
-            <h3>$8,710</h3>
-            <p>Magdeleine Schmidt</p>
-          </div>
-        </div>
-      </div><div class="slide-wrapper">
-        <div class="columns text-center">
-          <div>
-            <span><img src="assets/img/87m.jpg" alt="magdeleine-schmidt-photo"/></span>
-            <h3>$8,710</h3>
-            <p>Magdeleine Schmidt</p>
-          </div>
-        </div>
-      </div>
-
-    </div >
+    </div>
   </div>
 </div>
 
@@ -360,8 +352,8 @@
 
 <footer class="expanded ">
   <div class="row align-justify">
-    <p class="column small-12 medium-4"><span class="year"> 2016 </span>All right reserved</p>
-    <div class="column small-12 medium-4">
+    <p class="column shrink small-order-2 medium-order-1 "><span class="year"> 2016 </span>All right reserved</p>
+    <div class="column shrink small-order-1 medium-order-2">
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Blog</a></li>

@@ -3,6 +3,11 @@
   background: url("../img/story-photo.jpg") no-repeat center center/cover;
   padding: 160px 0 190px;
   position: relative;
+  @include breakpoint (768px down) {
+    text-align: center;
+    height: 100%;
+    padding: 50px 0 30px;
+  }
   &:before {
     content: " ";
     width: 100%;
@@ -10,12 +15,12 @@
     top: 0;
     left: 0;
     position: absolute;
-    background-color: rgba(25, 11, 35, 0.5);
+    background-color: rgba($dark-background, 0.5);
   }
   .story-block-article {
     position: inherit;
     h2, p {
-      color: #fff;
+      color: $main-white;
       line-height: 22px;
     }
   }

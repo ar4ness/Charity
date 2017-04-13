@@ -1,7 +1,7 @@
 html, body {
   height: auto;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $body-font-family;
   width: 100%;
   line-height: 1;
 }
@@ -20,27 +20,30 @@ li {
   display: inline-block;
 }
 p {
-  color: #807996;
-  font: 300 14px/20px 'Montserrat', sans-serif;
+  color: $main-grey;
+  font: 300 14px/20px $body-font-family;
   margin: 0;
 }
 span {
   display: inline-block;
 }
 h1 {
-  color: #ffffff;
-  font: 400 60px 'Montserrat', sans-serif;
+  color: $main-white;
+  font: 400 60px $body-font-family;
   margin: 0;
   letter-spacing: 1px;
+  @include breakpoint(640px down) {
+    font-size: 40px;
+  }
 }
 h2, h3, h4 {
-  color: #150c31;
+  color: $main-dark;
 }
 h2 {
-  font: 400 28px 'Montserrat', sans-serif;
+  font: 400 28px $body-font-family;
   margin: 0 0 20px;
 }
 h3 {
-  font: 400 18px 'Montserrat', sans-serif;
+  font: 400 18px $body-font-family;
   margin: 0;
 }

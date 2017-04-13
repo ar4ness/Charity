@@ -1,21 +1,23 @@
 .help-block {
   padding: 115px 0 70px;
-  .way-to-help {
-    margin-bottom: 25px;
+  @include breakpoint (768px down) {
+    padding: 20px 0 20px;
   }
-  .dots {
-    margin-bottom: 75px;
+  .way-to-help-holder {
+    margin-bottom: 45px;
   }
   .smart-object-holder {
     display: inline-block;
-    vertical-align: middle;
-    min-height: 80px;
-    min-width: 80px;
-    border: 2px solid #f3f3f3;
+    height: 80px;
+    width: 80px;
+    border: 2px solid #ece8f1;
     border-radius: 100%;
-    margin-bottom: 15px;
+    margin-left:-15px;
     img {
-
+      height: 40px;
+      width: 40px;
+      margin-top: 18px;
+      color: $main-dark;
     }
   }
 }

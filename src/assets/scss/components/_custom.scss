@@ -4,26 +4,29 @@
     width: 200px;
     height: 50px;
     font-size: 12px;
-    border: 2px solid #150c31;
+    border: 2px solid $main-dark;
     border-radius: 25px;
     text-align: center;
     line-height: 50px;
     transition: all ease-in-out 0.3s;
+    @include breakpoint (768px down) {
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+    }
     &.btn-white {
-      border-color: #150c31;
+      border-color: $main-dark;
       &:hover {
-        background-color: #150c31;
-        //border-color: #150c31;
-        color: #fff;
+        background-color: $main-dark;
+        color: $main-white;
       }
     }
     &.btn-green {
-      border-color: #32be60;
-      color: #32be60;
+      border-color: $main-green;
+      color: $main-green;
       &:hover {
-        background-color: #32be60;
-        //border-color: #150c31;
-        color: #fff;
+        background-color: $main-green;
+        color: $main-white;
       }
     }
   }
@@ -34,11 +37,11 @@ a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  font: 400 15px/18px 'Montserrat', sans-serif;
+  font: 400 15px/18px $body-font-family;
   transition: all ease-in-out 0.2s;
-  color: #150c31;
+  color: $main-dark;
   &:hover, &:active {
-    color: #32be60;
+    color: $main-green;
     .bordered {
       position: relative;
       //padding-left: 19px;
@@ -49,10 +52,27 @@ a {
         top: 0;
         width: 100%;
         height: 5px;
-        background: #fff;
+        background: $main-white;
         border-radius: 5px;
       }
     }
   }
 }
-
+.dots {
+  margin: 35px 0 75px;
+  @include breakpoint (768px down) {
+    margin: 20px 0 25px;
+  }
+  .dot {
+    margin-right: 17px;
+    display: inline-block;
+    color: $dots-color;
+    width: 8px;
+    height: 8px;
+    border: 4px solid $dots-color;
+    border-radius: 50%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
