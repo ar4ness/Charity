@@ -1,5 +1,5 @@
 .article-top {
-  background: $dark-background center center/cover;
+ background: $dark-background center center/cover;
   height: 100%;
   //padding: 0 0 45px;
  /* margin-bottom: 80px;*/
@@ -18,13 +18,13 @@
        min-height: 550px;
       }
       &.slide-1 {
-        background: url("../img/city-sunny-people-street-1.jpg") no-repeat 50%/cover;
+        background: $dark-background url("../img/city-sunny-people-street-1.jpg") no-repeat 50%/cover;
       }
       &.slide-2 {
-        background: url("../img/new-york-street-people.jpg") no-repeat 50%/cover;
+        background: $dark-background url("../img/new-york-street-people.jpg") no-repeat 50%/cover;
       }
       &.slide-3 {
-        background: url("../img/m48.jpg") no-repeat 50%/cover;
+        background: $dark-background url("../img/m48.jpg") no-repeat 50%/cover;
       }
       &:before {
         content: " ";
@@ -128,7 +128,7 @@
 .article-title {
   margin: 140px 0 120px;
   @include breakpoint(787px down) {
-    margin: 40px 0 20px;
+    margin: 20px 0 20px;
   }
   h1 {
     margin-bottom: 20px;
