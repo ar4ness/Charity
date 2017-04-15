@@ -1,21 +1,22 @@
 .article-top {
-  background: $dark-background;
+  background: $dark-background center center/cover;
   height: 100%;
-  background-size: cover ;
-  padding: 0 0 45px;
+  //padding: 0 0 45px;
  /* margin-bottom: 80px;*/
   position: relative;
+
   .header-slider {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    height: 100%;
     .header-slade-wrapper {
       min-height: 762px;
+      height: 100%;
       @include breakpoint(788px down) {
        min-height: 550px;
       }
-      height: 100%;
       &.slide-1 {
         background: url("../img/city-sunny-people-street-1.jpg") no-repeat 50%/cover;
       }
@@ -35,6 +36,24 @@
         background-color: rgba($dark-background, 0.6);
       }
     }
+    .slick-list {
+      margin: 0 -15px;
+    }
+    .slick-arrow {
+      color: transparent;
+      font-size: 0;
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      top: 0;
+    }
+  }
+  .title-bar {
+    background: transparent;
+    //.title-bar-title {
+     // font: 400 14px $body-font-family;
+      //color: $main-white;
+    //}
   }
 }
 
@@ -42,11 +61,16 @@
   height: 100px;
   padding-top: 45px;
   padding-bottom: 45px;
+  @include breakpoint(640px down) {
+    height: 40px;
+    padding: 20px 0;
+  }
   a {
     color: $main-white;
     @include breakpoint(640px down) {
       font-size: 8px;
-    }}
+    }
+  }
   ul {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -70,6 +94,10 @@
           width: 100%;
           height: 5px;
           background: $main-white;
+          @include breakpoint(640px down) {
+          top: -12px;
+          height: 3px;
+          }
         }
       }
       &:last-child { margin-right: 0; }
@@ -77,7 +105,6 @@
         position: relative;
         text-align: center;
         //padding-top: 45px;
-
         &:hover, &:active {
           &:before {
             position: absolute;
@@ -87,6 +114,10 @@
             width: 100%;
             height: 5px;
             background: $main-white;
+            @include breakpoint(640px down) {
+              top: -12px;
+              height: 3px;
+            }
           }
         }
       }
@@ -113,7 +144,7 @@
   }
 }
 .article-list {
-
+  margin-bottom: 45px;
   h3 {
     font-size: 14px;
     color: $main-white;
@@ -128,18 +159,36 @@
 }
 .header-wrapper {
   position: relative;
-}
-
-.header-slider {
-  .slick-list {
-    margin: 0 -15px;
+  .article-title {
+    margin: 140px 0 120px;
+    @include breakpoint(787px down) {
+      margin: 40px 0 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: rgba($main-white, 0.6) ;
+      margin-bottom: 75px;
+      @include breakpoint(787px down) {
+        margin-bottom: 35px;
+      }
+    }
   }
-  .slick-arrow {
-    color: transparent;
-    font-size: 0;
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    top: 0;
+  .article-list {
+    margin-bottom: 45px;
+    h3 {
+      font-size: 14px;
+      color: $main-white;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      color: rgba($main-white, 0.6);
+      font-size: 12px;
+      //margin-bottom: 10px;
+    }
   }
 }

@@ -16,5 +16,10 @@
     border-radius: 100%;
     margin-bottom: 15px;
   }
-
+  a {
+    color: $main-grey;
+    font: 300 14px/20px $body-font-family;
+    margin: 0;
+    text-transform: none;
+  }
 }

@@ -5,11 +5,7 @@ footer {
   height: 100%;
   @include breakpoint (640px down) {
     padding: 20px 0 20px;
-
   }
-  //@include breakpoint (500px down) {
-   // height: 55px;
-  //}
   .year {
     margin-right: 5px;
   }
@@ -17,12 +13,11 @@ footer {
     margin-right: 5px;
     &:nth-child(n+2) {
       :before {
-        color: $main-white; /* Цвет маркера */
-        content: "•"; /* Сам маркер */
-        padding-right: 5px; /* Расстояние от маркера до текста */
+        color: $main-white;
+        content: "•";
+        padding-right: 5px;
       }
     }
-
     a {
       color: $main-white;
       font-size: 12px;
