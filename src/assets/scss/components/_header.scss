@@ -1,11 +1,12 @@
 .article-top {
- background: $dark-background center center/cover;
+ //background: $dark-background ;
   height: 100%;
   //padding: 0 0 45px;
  /* margin-bottom: 80px;*/
   position: relative;
 
   .header-slider {
+    background: $dark-background center center/cover;
     position: absolute;
     left: 0;
     top: 0;
@@ -13,12 +14,8 @@
     height: 100%;
     .header-slade-wrapper {
       min-height: 762px;
-      height: 100%;
-      @include breakpoint(788px down) {
-       min-height: 550px;
-      }
       &.slide-1 {
-        background: $dark-background url("../img/city-sunny-people-street-1.jpg") no-repeat 50%/cover;
+        background: $dark-background url("../img/city-sunny-people-street-1.jpg") no-repeat center center/cover;
       }
       &.slide-2 {
         background: $dark-background url("../img/new-york-street-people.jpg") no-repeat 50%/cover;
@@ -38,6 +35,7 @@
     }
     .slick-list {
       margin: 0 -15px;
+      height: 100%;
     }
     .slick-arrow {
       color: transparent;
@@ -143,25 +141,12 @@
     }
   }
 }
-.article-list {
-  margin-bottom: 45px;
-  h3 {
-    font-size: 14px;
-    color: $main-white;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  p {
-    color: rgba($main-white, 0.6);
-    font-size: 12px;
-    //margin-bottom: 10px;
-  }
-}
+
 .header-wrapper {
   position: relative;
   .article-title {
     margin: 140px 0 120px;
-    @include breakpoint(787px down) {
+    @include breakpoint(965px down) {
       margin: 40px 0 20px;
     }
     h1 {
@@ -172,7 +157,7 @@
       letter-spacing: 1px;
       color: rgba($main-white, 0.6) ;
       margin-bottom: 75px;
-      @include breakpoint(787px down) {
+      @include breakpoint(965px down) {
         margin-bottom: 35px;
       }
     }
@@ -184,11 +169,17 @@
       color: $main-white;
       text-transform: uppercase;
       margin-bottom: 20px;
+      @include breakpoint(465px down) {
+        margin-bottom: 10px;
+      }
     }
     p {
       color: rgba($main-white, 0.6);
       font-size: 12px;
       //margin-bottom: 10px;
+    }
+    @include breakpoint(465px down) {
+      margin-bottom: 15px;
     }
   }
 }
